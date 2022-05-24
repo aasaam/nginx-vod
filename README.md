@@ -3,7 +3,7 @@
     Nginx VOD
   </h1>
   <p>
-    Image contain the <a href="https://github.com/kaltura/nginx-vod-module">NGINX-based VOD Packager</a>
+    Docker image contain the <a href="https://github.com/kaltura/nginx-vod-module">NGINX-based VOD Packager</a>
   </p>
   <p>
     <a href="https://github.com/aasaam/nginx-vod/actions/workflows/build.yml" target="_blank"><img src="https://github.com/aasaam/nginx-vod/actions/workflows/build.yml/badge.svg" alt="build" /></a>

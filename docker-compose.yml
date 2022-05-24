@@ -1,0 +1,14 @@
+# Copyright(c) 2021 aasaam software development group
+version: '3'
+
+services:
+  aasaam-nginx-vod:
+    container_name: aasaam-nginx-vod
+    image: ghcr.io/aasaam/nginx-vod:latest
+    ports:
+      - '80:80'
+    environment:
+      SAMPLE_ERROR_LOG_LEVEL: ${SAMPLE_ERROR_LOG_LEVEL:-warn}
+    volumes:
+      - ./nginx/conf.d:/opt/kaltura/nginx/conf.d:ro
+      - ./nginx/templates/nginx.conf:/opt/kaltura/nginx/templates/nginx.conf:ro

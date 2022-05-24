@@ -41,6 +41,8 @@ ADD nginx/conf.d /opt/kaltura/nginx/conf.d
 
 # template
 ADD nginx/templates /opt/kaltura/nginx/templates
+
+# executation
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD ["/opt/kaltura/nginx/sbin/nginx", "-g", "daemon off;"]

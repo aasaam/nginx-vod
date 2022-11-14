@@ -1,3 +1,4 @@
+default_type application/octet-stream;
 types {
 
   # essentials
@@ -51,6 +52,9 @@ types {
   image/x-icon                          cur ico;
   image/x-jng                           jng;
 
+  # multimedia
+  application/ogg                       ogg;
+
   # multimedia:audio
   audio/flac                            flac;
   audio/midi                            mid midi kar;
@@ -61,8 +65,6 @@ types {
   audio/x-matroska                      mka;
   audio/x-realaudio                     ra;
   audio/x-wav                           wav;
-
-  application/ogg                       ogg;
 
   # multimedia:video
   video/3gpp                            3gp 3gpp;

@@ -4,7 +4,7 @@ FROM ubuntu:20.04 as builder
 RUN export DEBIAN_FRONTEND=noninteractive; \
   apt update && \
   apt upgrade -y && \
-  apt install wget gnupg2 gettext-base --no-install-recommends -y && \
+  apt install wget gnupg2 gettext-base ca-certificates --no-install-recommends -y && \
   wget -O - http://installrepo.kaltura.org/repo/aptn/focal/kaltura-deb-256.gpg.key | apt-key add - && \
   echo "deb [arch=amd64] http://installrepo.kaltura.org/repo/aptn/focal quasar main" > /etc/apt/sources.list.d/kaltura.list && \
   apt update && \

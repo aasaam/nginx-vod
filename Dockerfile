@@ -8,7 +8,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
   wget -O - http://installrepo.kaltura.org/repo/aptn/focal/kaltura-deb-256.gpg.key | apt-key add - && \
   echo "deb [arch=amd64 allow-insecure=yes] http://installrepo.kaltura.org/repo/aptn/focal quasar main" > /etc/apt/sources.list.d/kaltura.list && \
   apt update && \
-  apt install kaltura-nginx libxml2 --no-install-recommends -y && \
+  apt install kaltura-nginx libxml2 --no-install-recommends -y --allow-unauthenticated && \
   apt-get -y purge wget gnupg2 && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/* && rm -rf /tmp && mkdir /tmp && chmod 777 /tmp && \
